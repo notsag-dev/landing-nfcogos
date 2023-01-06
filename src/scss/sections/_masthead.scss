@@ -1,36 +1,37 @@
-// 
+//
 // Masthead
-// 
+//
 
 header.masthead {
-    position: relative;
-    background-color: $gray-800;
-    background: url('../assets/img/bg-masthead.jpg') no-repeat center center;
-    background-size: cover;
-    padding-top: 8rem;
+  position: relative;
+  background-color: $gray-800;
+  background: url("../assets/img/bg-masthead.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  &:before {
+    content: "";
+    position: absolute;
+    background-color: mix($gray-900, $primary, 75%);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+  }
+
+  h1 {
+    font-size: 2rem;
+    font-weight: normal;
+  }
+
+  @media (min-width: 768px) {
+    padding-top: 6rem;
     padding-bottom: 8rem;
 
-    &:before {
-        content: '';
-        position: absolute;
-        background-color: mix($gray-900, $primary, 75%);
-        height: 100%;
-        width: 100%;
-        top: 0;
-        left: 0;
-        opacity: 0.5;
-    }
-
     h1 {
-        font-size: 2rem;
+      font-size: 3rem;
     }
-
-    @media (min-width: 768px) {
-        padding-top: 12rem;
-        padding-bottom: 12rem;
-
-        h1 {
-            font-size: 3rem;
-        }
-    }
+  }
 }
