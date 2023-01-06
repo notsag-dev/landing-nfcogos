@@ -1,10 +1,10 @@
-# [NFCogos - Landing Page](https://startbootstrap.com/theme/landing-page/)
+# [NFCogos - Landing Page](https://www.nfcogos.com)
 
 ## Preview
 
 [![Landing Page Preview](https://i.imgur.com/Z2NeqmF.png)](https://startbootstrap.github.io/startbootstrap-landing-page/)
 
-**[View Live Preview](https://startbootstrap.github.io/startbootstrap-landing-page/)**
+**[View Live Preview](https://www.nfcogos.com)**
 
 ## Use
 * `npm run build` builds the project - this builds assets, HTML, JS, and CSS into `dist`
