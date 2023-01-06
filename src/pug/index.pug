@@ -46,20 +46,21 @@ html(lang='en')
                             // To make this form functional, sign up at
                             // https://startbootstrap.com/solution/contact-forms
                             // to get an API token!
+                            h2.mb-5 Sé el primero en enterarte cuando la app esté disponible!
 
                             form.form-subscribe#contactForm(data-sb-form-api-token='API_TOKEN')
 
                                 // Email address input
                                 .row
                                     .col
-                                        input#emailAddress.form-control.form-control-lg(type='email' placeholder='Email Address' data-sb-validations='required,email')
+                                        input#emailAddress.form-control.form-control-lg(type='email' placeholder='Correo electrónico' data-sb-validations='required,email')
                                         .invalid-feedback.text-white(data-sb-feedback='emailAddress:required')
-                                            | Email Address is required.
+                                            | El correo electrónico no puede estar vacío.
                                         .invalid-feedback.text-white(data-sb-feedback='emailAddress:email')
-                                            | Email Address Email is not valid.
+                                            | Correo electrónico inválido.
 
                                     .col-auto
-                                        button#submitButton.btn.btn-primary.btn-lg.disabled(type='submit') Submit
+                                        button#submitButton.btn.btn-primary.btn-lg.disabled(type='submit') Enviar
 
                                 // Submit success message
                                 //
@@ -68,9 +69,7 @@ html(lang='en')
 
                                 #submitSuccessMessage.d-none
                                     .text-center.mb-3
-                                        .fw-bolder Form submission successful!
-                                        p To activate this form, sign up at
-                                        a.text-white(href='https://startbootstrap.com/solution/contact-forms') https://startbootstrap.com/solution/contact-forms
+                                        .fw-bolder Perfecto! Estaremos en contacto pronto
 
                                 // Submit error message
                                 //
@@ -78,7 +77,7 @@ html(lang='en')
                                 // an error submitting the form
 
                                 #submitErrorMessage.d-none
-                                    .text-center.text-danger.mb-3 Error sending message!
+                                    .text-center.text-danger.mb-3 Error enviando tu correo. Intenta de nuevo más tarde.
 
         // Icons Grid
         section.features-icons.bg-light.text-center
@@ -125,96 +124,13 @@ html(lang='en')
                         p.lead.mb-0
                             | Comparte fotos e información de trazabilidad con tus clientes y entidades reguladoras. Además, si tus proveedores también usan NFCogos, importa esta información para contar con la historia completa de las plantas o productos derivados.
 
-        // Testimonials
-        section.testimonials.text-center.bg-light
-            .container
-                h2.mb-5 What people are saying...
-                .row
-                    .col-lg-4
-                        .testimonial-item.mx-auto.mb-5.mb-lg-0
-                            img.img-fluid.rounded-circle.mb-3(src='assets/img/testimonials-1.jpg', alt='...')
-                            h5 Margaret E.
-                            p.font-weight-light.mb-0 "This is fantastic! Thanks so much guys!"
-                    .col-lg-4
-                        .testimonial-item.mx-auto.mb-5.mb-lg-0
-                            img.img-fluid.rounded-circle.mb-3(src='assets/img/testimonials-2.jpg', alt='...')
-                            h5 Fred S.
-                            p.font-weight-light.mb-0
-                                | "Bootstrap is amazing. I've been using it to create lots of super nice landing pages."
-                    .col-lg-4
-                        .testimonial-item.mx-auto.mb-5.mb-lg-0
-                            img.img-fluid.rounded-circle.mb-3(src='assets/img/testimonials-3.jpg', alt='...')
-                            h5 Sarah W.
-                            p.font-weight-light.mb-0 "Thanks so much for making these free resources available to us!"
-
-        // Call to Action
-        section#signup.call-to-action.text-white.text-center
-            .container.position-relative
-                .row.justify-content-center
-                    .col-xl-6
-                        h2.mb-4 Ready to get started? Sign up now!
-                        // Signup form
-                        
-                        // * * * * * * * * * * * * * * *
-                        // * * SB Forms Contact Form * *
-                        // * * * * * * * * * * * * * * *
-
-                        // This form is pre-integrated with SB Forms.
-                        // To make this form functional, sign up at
-                        // https://startbootstrap.com/solution/contact-forms
-                        // to get an API token!
-
-                        form.form-subscribe#contactFormFooter(data-sb-form-api-token='API_TOKEN')
-
-                            // Email address input
-                            .row
-                                .col
-                                    input#emailAddressBelow.form-control.form-control-lg(type='email' placeholder='Email Address' data-sb-validations='required,email')
-                                    .invalid-feedback.text-white(data-sb-feedback='emailAddressBelow:required')
-                                        | Email Address is required.
-                                    .invalid-feedback.text-white(data-sb-feedback='emailAddressBelow:email')
-                                        | Email Address Email is not valid.
-
-                                .col-auto
-                                    button#submitButton.btn.btn-primary.btn-lg.disabled(type='submit') Submit
-
-                            // Submit success message
-                            //
-                            // This is what your users will see when the form
-                            // has successfully submitted
-
-                            #submitSuccessMessage.d-none
-                                .text-center.mb-3
-                                    .fw-bolder Form submission successful!
-                                    p To activate this form, sign up at
-                                    a.text-white(href='https://startbootstrap.com/solution/contact-forms') https://startbootstrap.com/solution/contact-forms
-
-                            // Submit error message
-                            //
-                            // This is what your users will see when there is
-                            // an error submitting the form
-
-                            #submitErrorMessage.d-none
-                                .text-center.text-danger.mb-3 Error sending message!
-
         // Footer
         footer.footer.bg-light
             .container
                 .row
                     .col-lg-6.h-100.text-center.text-lg-start.my-auto
                         ul.list-inline.mb-2
-                            li.list-inline-item
-                                a(href='#!') About
-                            li.list-inline-item ⋅
-                            li.list-inline-item
-                                a(href='#!') Contact
-                            li.list-inline-item ⋅
-                            li.list-inline-item
-                                a(href='#!') Terms of Use
-                            li.list-inline-item ⋅
-                            li.list-inline-item
-                                a(href='#!') Privacy Policy
-                        p.text-muted.small.mb-4.mb-lg-0 &copy; Your Website 2022. All Rights Reserved.
+                        p.text-muted.small.mb-4.mb-lg-0 &copy; NFCogos 2023. All rights reserved.
                     .col-lg-6.h-100.text-center.text-lg-end.my-auto
                         ul.list-inline.mb-0
                             li.list-inline-item.me-4

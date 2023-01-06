@@ -11322,6 +11322,10 @@ header.masthead h1, header.masthead .h1 {
   font-size: 2rem;
   font-weight: normal;
 }
+header.masthead h2, header.masthead .h2 {
+  font-size: 1.7rem;
+  font-weight: normal;
+}
 @media (min-width: 768px) {
   header.masthead {
     padding-top: 6rem;
@@ -11347,7 +11351,7 @@ header.masthead h1, header.masthead .h1 {
 
 .testimonials {
   padding-top: 7rem;
-  padding-bottom: 7rem;
+  padding-bottom: 2rem;
 }
 .testimonials .testimonial-item {
   max-width: 18rem;
