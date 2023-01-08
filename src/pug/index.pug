@@ -52,14 +52,14 @@ html(lang='en')
                                 // Email address input
                                 .row
                                     .col
-                                        input#emailAddress.form-control.form-control-lg(type='email' placeholder='Correo electrónico' data-sb-validations='required,email')
-                                        .invalid-feedback.text-white(data-sb-feedback='emailAddress:required')
+                                        input#email.form-control(type='email' name='email' placeholder='Correo electrónico' data-sb-validations='required,email')
+                                        .invalid-feedback.text-white(data-sb-feedback='email:required')
                                             | El correo electrónico no puede estar vacío.
-                                        .invalid-feedback.text-white(data-sb-feedback='emailAddress:email')
+                                        .invalid-feedback.text-white(data-sb-feedback='email:email')
                                             | Correo electrónico inválido.
 
                                     .col-auto
-                                        button#submitButton.btn.btn-primary.btn-lg.disabled(type='submit') Enviar
+                                        button#submitButton.btn.btn-primary(type='submit') Enviar
 
                                 // Submit success message
                                 //
@@ -141,16 +141,8 @@ html(lang='en')
                             li.list-inline-item
                                 a(href='https://www.instagram.com/nfcogos')
                                     i.bi-instagram.fs-3
-
         // Bootstrap core JS
         script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js')
 
         // Core theme JS
         script(src='js/scripts.js')
-
-        // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-        // * *                               SB Forms JS                               * *
-        // * * Activate your form at https://startbootstrap.com/solution/contact-forms * *
-        // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-
-        script(src='https://cdn.startbootstrap.com/sb-forms-latest.js')
