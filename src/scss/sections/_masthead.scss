@@ -17,12 +17,12 @@ header.masthead {
   &:before {
     content: "";
     position: absolute;
-    background-color: mix($gray-900, $primary, 75%);
+    background-color: $gray-900;
     height: 100%;
     width: 100%;
     top: 0;
     left: 0;
-    opacity: 0.5;
+    opacity: 0.6;
   }
 
   h1 {
